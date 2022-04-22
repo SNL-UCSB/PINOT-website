@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Jekyll build
 
 on:
   push:
@@ -9,12 +9,8 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, pinot-website]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/PINOT-website -v ${{ github.workspace }}/_site:/srv/PINOT-website/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - name: Checkout current repo to the default location
+      run: echo 1
