@@ -13,4 +13,6 @@ jobs:
 
     steps:
     - name: Checkout current repo to the default location
-      run: echo 1
+      uses: actions/checkout@v3
+      with:
+        path: /srv/PINOT-website
