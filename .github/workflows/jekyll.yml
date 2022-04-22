@@ -17,9 +17,10 @@ jobs:
     
     - name: Build the website with jekyll
       run: bundle exec jekyll build
-      
+    
+    # make sure not to remove _site folder as it's owned by docker container
     - name: Remove the previous website
-      run: rm -r /srv/PINOT-website/_site
+      run: rm -r /srv/PINOT-website/_site/*
       
     - name: Deploy the new website
-      run: mv _site /srv/PINOT-website/
+      run: mv _site/* /srv/PINOT-website/_site/
