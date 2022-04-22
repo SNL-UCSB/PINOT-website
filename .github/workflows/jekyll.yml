@@ -18,5 +18,8 @@ jobs:
     - name: Build the website with jekyll
       run: bundle exec jekyll build
       
-    - name: Deploy the website
-      run: mv _site /srv/PINOT-website/_site
+    - name: Remove the previous website
+      run: rm /srv/PINOT-website
+      
+    - name: Deploy the new website
+      run: mv _site /srv/PINOT-website/
