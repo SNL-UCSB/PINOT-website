@@ -14,5 +14,7 @@ jobs:
     steps:
     - name: Checkout current repo to the default location
       uses: actions/checkout@v3
-      with:
-        path: /srv/PINOT-website
+    
+    - name: Build the website with jekyll
+      run: bundle exec jekyll build
+      
