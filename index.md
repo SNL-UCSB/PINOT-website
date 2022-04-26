@@ -1,6 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: The PINOT Project
+nav_order: 1
+has_children: false
+permalink: /
 ---
+
+PINOT is a programmable infrastructure for AI/ML for Networking (NetAI) research
+that enables development of trustworthy machine learning artifacts for
+Networking.
+
+This effort is supported by:
+* NSF Campus Cyberinfrastructure (CC*) grant, OAC-2126327;
+* NSF Campus Cyberinfrastructure (CC*) grant, OAC-2126327; and
+* NSF and Intel Machine Learning for Wireless Systems (MLWiNS), CNS-2003257

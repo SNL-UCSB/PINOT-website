@@ -16,16 +16,30 @@
 title: PINOT
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  PINOT project website
+  Programmable Research Infrastructure for Networking Research
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://snl-server-3.cs.ucsb.edu" # the base hostname & protocol for your site, e.g. http://example.com
 
+search_enabled: false
+
 # Build settings
 markdown: kramdown
-theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
