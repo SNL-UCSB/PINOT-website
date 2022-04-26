@@ -27,6 +27,7 @@ sprinkled across the campus network.
 
 
 ## Deployment
+![](https://i.imgur.com/1xdBrdO.png)
 ### Stage 1
 The first stage of this project entailed developing a data-collection pipeline
 that collects raw packet traces from one or more strategic vantage points in a
@@ -60,6 +61,8 @@ quality, i.e, quality of experience (QoE) metrics, we need to collect the QoE
 metrics from the end-hosts. Our current setup does not collect any data from
 the end hosts, which motivates us to transition to stage two of this
 data-collection pipeline.
+
+![](https://i.imgur.com/SI99w1s.png)
 
 ### Stage 2
 Our goal is to collect QoE metrics from the end hosts at scale. Ideally, we’d
