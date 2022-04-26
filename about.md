@@ -4,8 +4,30 @@ title: About
 permalink: /about/
 ---
 
-# PINOT Journey
-## Stage 1
+## What's PINOT?
+PINOT is an abbreviation for programmable research infrastructure for NetAI.
+
+It has two key components:
+1. `Programmable interface`: A target-agnostic APIs that let the programmer(s) express their data-processing pipeline for collecting or applying learning models specifying what, when, and where to collect (or deploy) data, labels, and learning models.
+
+![](https://hackmd.io/_uploads/SJETOHT-9.png)
+
+2. `Driver(s)`: Translates target-agnostic programs into target-specific
+configuration/programs and commands.
+
+
+![](https://hackmd.io/_uploads/SkVPcS6b9.png)
+
+
+Currently, our focus is more on data-collection. Here, we have two key
+modules: (1) collects packet traces from different vantage points in the
+networks, (2) collects application-specific data from end-hosts. Here,
+the end-hosts are usually single-board computers (e.g., RasPis) that are
+sprinkled across the campus network.
+
+
+## Deployment Journey
+### Stage 1
 The first stage of this project entailed developing a data-collection pipeline
 that collects raw packet traces from one or more strategic vantage points in a
 privacy-preserving manner at scale. To this end, we developed a data-collection
@@ -39,7 +61,7 @@ metrics from the end-hosts. Our current setup does not collect any data from
 the end hosts, which motivates us to transition to stage two of this
 data-collection pipeline.
 
-# Stage 2
+### Stage 2
 Our goal is to collect QoE metrics from the end hosts at scale. Ideally, we’d
 like to collect these metrics from the end-users directly, but such a
 data-collection is intrusive to user privacy, and hard to scale. To address
