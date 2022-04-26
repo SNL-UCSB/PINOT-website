@@ -26,7 +26,7 @@ the end-hosts are usually single-board computers (e.g., RasPis) that are
 sprinkled across the campus network.
 
 
-## Deployment Journey
+## Deployment
 ### Stage 1
 The first stage of this project entailed developing a data-collection pipeline
 that collects raw packet traces from one or more strategic vantage points in a
