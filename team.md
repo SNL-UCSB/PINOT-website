@@ -9,6 +9,7 @@ permalink: /team/
 ## Current participants
 - Dr. Arpit Gupta
 - Roman Beltiukov
+- Nawel Alioua
 - Sanjay Chandrasekaran
 
 ## Past participants
