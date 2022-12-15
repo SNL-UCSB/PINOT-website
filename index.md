@@ -14,3 +14,5 @@ This effort is supported by:
 * NSF Campus Cyberinfrastructure (CC*) grant, OAC-2126327;
 * NSF Campus Cyberinfrastructure (CC*) grant, OAC-2126327; and
 * NSF and Intel Machine Learning for Wireless Systems (MLWiNS), CNS-2003257
+
+You can contact the team and ask questions using the next email: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
