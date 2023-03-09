@@ -9,21 +9,17 @@ on:
 jobs:
   build:
 
-    runs-on: [self-hosted, pinot-website]
+    runs-on: [self-hosted, website]
 
     steps:
     - name: Checkout current repo to the default location
       uses: actions/checkout@v3
     
-    - name: Update packages
-      run: bundle update
-      
     - name: Build the website with jekyll
-      run: bundle exec jekyll build
-    
-    # make sure not to remove _site folder as it's owned by docker container
+      uses: jerryjvl/jekyll-build-action@v1
+      
     - name: Remove the previous website
-      run: rm -r /srv/PINOT-website/_site/*
+      run: rm -r /srv/PINOT-website/_site/* || true
       
     - name: Deploy the new website
-      run: mv _site/* /srv/PINOT-website/_site/
+      run: mv ./_site/* /srv/PINOT-website/_site/
