@@ -14,17 +14,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: PINOT
-email: your-email@example.com
+email: pinot@cs.ucsb.edu
 description: >- # this means to ignore newlines until "baseurl:"
   PINOT project website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pinot.cs.ucsb.edu" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pinot.cs.ucsb.edu" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 theme: "just-the-docs"
 plugins:
   - jekyll-feed
+
+nav_external_links:
+  - title: netunicorn
+    url: https://netunicorn.cs.ucsb.edu
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
