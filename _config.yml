@@ -29,6 +29,7 @@ plugins:
 nav_external_links:
   - title: netunicorn
     url: https://netunicorn.cs.ucsb.edu
+    hide_icon: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
