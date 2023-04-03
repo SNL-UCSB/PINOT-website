@@ -1,16 +1,20 @@
 <link href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
 <script src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
 <script src="../assets/js/status-handler.js"></script>
+
+<table id="pinotNodesStatus" class="display"></table>
+
 <script>
     $(document).ready(function () {
-        $('table.datatable').DataTable({
-            data: data,
+        $('#pinotNodesStatus').DataTable({
+            data: pinotdata,
             columns: [
                 { data: 'Label' },
                 { data: 'Last contacted' },
                 { data: 'Uptime' },
                 { data: 'Location' },
-                { data: 'Location' },
+                { data: 'Wired Traffic' },
+                { data: 'Wireless Traffic' },
             ]
         });
     });
