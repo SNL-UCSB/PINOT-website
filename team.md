@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Team
 permalink: /team/
 ---
@@ -11,8 +11,8 @@ Contact email: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
 ## Current participants
 - Dr. Arpit Gupta
 - Roman Beltiukov
-- Nawel Alioua
 - Sanjay Chandrasekaran
 
 ## Past participants
 - Abtin Bateni
+- Nawel Alioua
