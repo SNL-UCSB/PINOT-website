@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: Status
+permalink: /status/
 nav_order: 2
 ---
 
