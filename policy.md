@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /policy
+permalink: /policy/
 ---
 
 We require all holders of PINOT nodes to read and agree with this policy. 
