@@ -44,4 +44,8 @@ expand our presence to multiple physical locations. These nodes are located at v
 
 ### Other places
 Currently, we are expanding our presence over Santa Barbara county and always welcome new volunteers who are able to host the PINOT node.
-Please, apply through the [Apply for a node](../application) page.
+Please, apply through the [Apply for a node](https://docs.google.com/forms/d/1H44yeI5u_tb1pQLd0ocA8ABWxaQ5aZB7QCqAyiGURbA) page.
+
+## How we manage our infrastructure?
+We use an open-source platform [SaltStack](https://saltproject.io/) to control and maintain our devices.
+Deployment of the experiments could be done via different ways, including Docker container deployment or using [netunicorn](https://netunicorn.cs.ucsb.edu) platform.

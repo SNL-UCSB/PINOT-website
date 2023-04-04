@@ -40,4 +40,7 @@ remotely access the devices. Even in case of full physical access to one of the 
 centralized infrastructure or any other nodes. 
 
 ### It's too loud / too suspicious / I don't want this to be around!
-Please, contact us: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
+Please, contact us by our email: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
+
+### Can I do my own research using your devices?
+Yes! Please, contact us by our email: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
