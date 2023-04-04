@@ -5,6 +5,16 @@ function bytesToMegabytes(data, type, row) {
     return data;
 }
 
+function nullableDate(data, type, row) {
+    if (type === 'display') {
+        if (data == null) {
+            return data;
+        }
+        return DataTable.render.datetime('MMMM dd yyyy, h:mm:ss a')(data)
+    }
+    return data;
+}
+
 $(document).ready(function () {
     // Fetch data from the API using AJAX
     $.ajax({
@@ -21,7 +31,8 @@ $(document).ready(function () {
                     {
                         data: 'last_seen',
                         title: 'Last contacted',
-                        render: DataTable.render.datetime('MMMM Do YYYY, hh:mm:ss')
+                        // 2023-04-04T01:06:23.933771
+                        render: nullableDate
                     },
                     {data: 'uptime', title: 'Uptime'},
                     {data: 'location', title: 'Location'},
