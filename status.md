@@ -5,4 +5,4 @@ permalink: /status/
 nav_order: 2
 ---
 
-{% include mytest.html %}
+{% include status_window.html %}
