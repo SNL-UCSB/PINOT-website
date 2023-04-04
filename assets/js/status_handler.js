@@ -15,9 +15,14 @@ $(document).ready(function () {
             // Initialize DataTables with the fetched data
             $('#pinotNodesStatus').DataTable({
                 data: data,
+                order: [[1, 'desc']],
                 columns: [
                     {data: 'label', title: 'Label'},
-                    {data: 'last_seen', title: 'Last contacted'},
+                    {
+                        data: 'last_seen',
+                        title: 'Last contacted',
+                        render: DataTable.render.datetime('MMMM Do YYYY, hh:mm:ss')
+                    },
                     {data: 'uptime', title: 'Uptime'},
                     {data: 'location', title: 'Location'},
                     {
