@@ -27,12 +27,11 @@ plugins:
   - jekyll-feed
 
 nav_external_links:
-  - title: netunicorn
-    url: https://netunicorn.cs.ucsb.edu
-    hide_icon: true
-
   - title: Apply for a node
     url: https://docs.google.com/forms/d/1H44yeI5u_tb1pQLd0ocA8ABWxaQ5aZB7QCqAyiGURbA
+
+  - title: netunicorn
+    url: https://netunicorn.cs.ucsb.edu
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
