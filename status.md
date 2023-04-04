@@ -1,5 +1,5 @@
 ---
-layout: minima
+layout: minimal
 title: Status
 permalink: /status/
 nav_order: 2
