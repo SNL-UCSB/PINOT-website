@@ -58,11 +58,7 @@ $(document).ready(function () {
                         render: (data, type, row) =>
                             type === 'display' && data !== null ? data + "% out of 5 packets" : data,
                     },
-                    {
-                        data: "connected_time", title: "WiFi connected time",
-                        render: (data, type, row) =>
-                            type === 'display' && data !== null ? data + " seconds" : data,
-                    },
+                    { data: "connected_time", title: "WiFi connected time" },
                 ]
             });
         },
