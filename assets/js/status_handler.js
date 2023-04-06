@@ -18,7 +18,7 @@ function nullableDate(data, type, row) {
 $(document).ready(function () {
     // Fetch data from the API using AJAX
     $.ajax({
-        url: 'https://pinot.cs.ucsb.edu/api/v1/info/devices',
+        url: 'https://pinot.cs.ucsb.edu/api/v1/info/wifi_united',
         method: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -29,9 +29,8 @@ $(document).ready(function () {
                 columns: [
                     {data: 'label', title: 'Label'},
                     {
-                        data: 'last_seen',
+                        data: 'last_contacted',
                         title: 'Last contacted',
-                        // 2023-04-04T01:06:23.933771
                         render: nullableDate
                     },
                     {data: 'uptime', title: 'Uptime'},
@@ -45,6 +44,24 @@ $(document).ready(function () {
                         data: 'wireless_bytes',
                         title: 'Wireless Traffic',
                         render: bytesToMegabytes
+                    },
+                    {data: 'ping', title: 'Ping to UCSB border gateway'},
+                    {
+                        data: 'signal', title: 'Signal Strength',
+                        render: (data, type, row) =>
+                            type === 'display' && data !== null ? data + " dBm" : data,
+                    },
+                    {data: "tx_bitrate", title: "TX bitrate"},
+                    {data: "rx_bitrate", title: "RX bitrate"},
+                    {
+                        data: "packet_loss", title: "Packet Loss",
+                        render: (data, type, row) =>
+                            type === 'display' && data !== null ? data + "% out of 5 packets" : data,
+                    },
+                    {
+                        data: "connected_time", title: "WiFi connected time",
+                        render: (data, type, row) =>
+                            type === 'display' && data !== null ? data + " seconds" : data,
                     },
                 ]
             });
