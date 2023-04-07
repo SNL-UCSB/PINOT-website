@@ -28,7 +28,7 @@ function extractAverageRTT(inputString) {
     if (match && match[1]) {
         return parseFloat(match[1]);
     } else {
-        throw new Error('Invalid input string format');
+        return 0;
     }
 }
 

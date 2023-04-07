@@ -15,6 +15,21 @@ function nullableDate(data, type, row) {
     return data;
 }
 
+function deviceLabelWrapper(data, type, row) {
+    if (data == null) {
+        return data;
+    }
+
+    const display_data = data;
+
+    if (data.startsWith("raspi-")) {
+        data = data.slice("raspi-".length)
+    }
+
+    const link = "https://pinot.cs.ucsb.edu/devices/" + data;
+    return '<a href="' + link + '">' + display_data + '</a>';
+}
+
 $(document).ready(function () {
     // Fetch data from the API using AJAX
     $.ajax({
@@ -27,7 +42,10 @@ $(document).ready(function () {
                 data: data,
                 order: [[1, 'desc']],
                 columns: [
-                    {data: 'label', title: 'Label'},
+                    {
+                        data: 'label', title: 'Label',
+                        render: deviceLabelWrapper,
+                    },
                     {
                         data: 'last_contacted',
                         title: 'Last contacted',
