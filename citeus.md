@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cite us
+# title: Cite us
 permalink: /citeus/
 ---
 
