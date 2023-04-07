@@ -8,7 +8,7 @@ const eth_mac = encodeURIComponent(getQueryParam('label'));
 $(document).ready(function () {
     // Fetch data from the API using AJAX
     $.ajax({
-        url: `https://pinot.cs.ucsb.edu/api/v1/info/wifistats_ethmac?ethernet_mac=eq.${eth_mac}&order=time.desc&limit=100`,
+        url: `https://pinot.cs.ucsb.edu/api/v1/info/wifistats_ethmac?ethernet_mac=eq.${eth_mac}&order=time.desc&limit=200`,
         method: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -42,15 +42,15 @@ function init_plot(data) {
             labels: data.map(d => d.time),
             datasets: [
                 {
-                    label: 'Signal',
+                    label: 'Signal Strength (dBm)',
                     data: data.map(d => d.signal),
-                    borderColor: 'blue',
+                    borderColor: '#ff7f0e',
                     yAxisID: 'y1',
                 },
                 {
-                    label: 'Ping',
+                    label: 'Ping to UCSB gateway (ms)',
                     data: data.map(d => extractAverageRTT(d.ping)),
-                    borderColor: 'red',
+                    borderColor: '#2ca02c',
                     yAxisID: 'y2',
                 },
 
@@ -62,7 +62,7 @@ function init_plot(data) {
                     type: 'linear',
                     position: 'left',
                     min: -128,
-                    max: 0
+                    max: 0,
                 },
                 y2: {
                     type: 'linear',
