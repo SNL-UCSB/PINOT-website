@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /devices/
+permalink: /device/
 ---
 
 {% include device_window.html %}
