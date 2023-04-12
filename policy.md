@@ -15,8 +15,8 @@ In any case, please read the whole policy presented below.
 # PINOT Node Holder Policy
 
 ## Identity information
-To properly maintain the project's coverage, we are required to store your location information and preferred way to contact you. 
-This information is available only to the project's team and under no condition (except legal obligations) is shared with other parties.
+To properly maintain the project's coverage, we are required to store nodes' location information and preferred way to contact you. 
+This precies information is available only to the project's team and under no condition (except legal obligations) is shared with other parties.
 
 ## Node information sharing
 To provide project's transparency, we publicly share approximate nodes locations, together with their uptime and total traffic usage on both
@@ -35,4 +35,4 @@ As a PINOT node holder, you're required not to intervene into the node's work, i
 
 You are allowed to physically disconnect the node from the power source (turning it off) if it's required, but we'd
 appreciate if you turn it on back as soon as possible, or notify us if it's not possible. If there are any problems or discomfort regarding the node 
-(including noise, heat, or any other physical or psychological issues), we kindly ask you to notify us using the project's email
+(including noise, heat, or any other physical or psychological issues), we kindly ask you to notify us using the project's email.
