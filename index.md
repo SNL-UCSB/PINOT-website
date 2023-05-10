@@ -15,6 +15,21 @@ This effort is supported by:
 
 You can contact the team and ask questions using the next email: [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu)
 
+## How can I participate?
+You can participate by hosting either _virtual_ or _physical_ node.
+
+### Hosting a virtual node
+You can host an isolated Docker container:
+```bash
+docker run -d --restart=always maybehelloworld/pinot-virtual:latest
+```
+
+Please, notify us via [pinot@cs.ucsb.edu](mailto:pinot@cs.ucsb.edu) if you host a node.  
+Additional instructions are provided on the next page: [Host a virtual node](/virtual)
+
+### Hosting a physical node
+Please, apply through the [Apply for a node](https://docs.google.com/forms/d/1H44yeI5u_tb1pQLd0ocA8ABWxaQ5aZB7QCqAyiGURbA) page.
+
 ## Project goal
 We aim to deploy dozens of small programmable devices (usually - Raspberry Pi) capable of executing network measurements (such as ping, traceroute, etc.)
 that would be centrally managed and controlled. These devices would be connected to a public infrastructure available at the deployment location
